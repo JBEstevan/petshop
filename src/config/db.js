@@ -1,9 +1,10 @@
 import mongoose from "mongoose";
 
-const connectDB = async() => {
+const connectDB = async () => {
     try {
         await mongoose.connect(
-            `mongodb+srv://jbeestevan:yq070PHuCbD1VuOG@cluster0.28ovm.mongodb.net`
+            `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.CLUSTER_ADDRESS}/${process.env.DB_NAME}`
+            // `mongoose.connect('mongodb+srv://<DB_USER>:<PASSWORD>i@<CLUSTER_NAME>/<COLLECTION_NAME>');`
         );
 
     } catch (error) {
@@ -15,5 +16,3 @@ const connectDB = async() => {
 connectDB();
 
 export default mongoose;
-
-/* mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.CLUSTER_ADDRESS}/${process.env.DB_NAME} */
