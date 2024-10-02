@@ -7,8 +7,8 @@ import {
     destroy,
 } from "../controllers/animal-controller.js";
 
-import check_token from "../middleware/check_token.js";
-import check_role from "../middleware/check_role.js"
+import check_token from "../middlewares/check_token.js";
+import check_role from "../middlewares/check_role.js"
 
 const router = Router();
 

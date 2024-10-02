@@ -9,9 +9,9 @@ import {
   login,
 } from "../controllers/user-controller.js";
 
-import check_token from "../middleware/check_token.js";
-import check_role from "../middleware/check_role.js"
-import via_cep from "../middleware/via_cep.js"
+import check_token from "../middlewares/check_token.js";
+import check_role from "../middlewares/check_role.js"
+import via_cep from "../middlewares/via_cep.js"
 
 const router = Router();
 

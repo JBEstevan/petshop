@@ -1,6 +1,7 @@
 {
   "name": "petshop",
   "version": "1.0.0",
+  "type": "module",
   "description": "Praticando autenticação de usuário, através de um projeto de Petshop.",
   "main": "index.js",
   "scripts": {
@@ -12,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.7.7",
     "bcrypt": "^5.1.1",
     "dotenv": "^16.4.5",
     "express": "^4.21.0",
